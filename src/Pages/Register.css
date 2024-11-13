@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Aharoni';
+    src: local('Aharoni'); /* Use the locally installed Aharoni font */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Aharoni', Arial, sans-serif; /* Set Aharoni as default with fallbacks */
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./click.jpg'); /* Update with the correct path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.register-form {
+    background-color: rgba(252, 252, 252, 0.85);
+    padding: 2rem;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-family: 'Aharoni', Arial, sans-serif; /* Explicitly set Aharoni for the form */
+}
+
+.register-form h1,
+.register-form label,
+.register-form input,
+.register-form button {
+    font-family: 'Aharoni', Arial, sans-serif; /* Set Aharoni with fallback */
+}
+
+.register-form h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.register-form label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cecdcd;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.register-form input:focus {
+    border-color: #e07604; /* Highlight color on focus */
+}
+
+.register-form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #e07604;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #d06500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add a shadow on hover */
+}
+
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #e07604;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    color: #d06500;
+    text-decoration: underline;
+}

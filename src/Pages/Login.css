@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Aharoni';
+    src: local('Aharoni'); /* Use the locally installed Aharoni font */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Aharoni', sans-serif; /* Set Aharoni as default for the whole page */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./click.jpg'); /* Same background image as Register */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-form {
+    background-color: rgba(252, 252, 252, 0.9); /* Increased transparency for more emphasis */
+    padding: 3rem; /* Increased padding for a more spacious feel */
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px; /* Increased max-width to expand the form */
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22); /* Enhanced shadow for a more prominent look */
+    font-family: 'Aharoni', sans-serif; /* Explicitly set Aharoni for the form */
+}
+
+.login-form h1 {
+    font-size: 28px; /* Increased font size for the heading */
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin: 0.8rem 0 0.5rem; /* Adjusted margin for better spacing */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 1rem; /* Increased padding for more space inside the input */
+    margin-bottom: 1.5rem; /* Increased space between inputs */
+    border: 1px solid #cecdcd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px; /* Increased font size for readability */
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password-button {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Aharoni', sans-serif; /* Explicitly set Aharoni for the form */
+
+}
+
+.login-form button {
+    width: 100%;
+    padding: 1rem; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 30px;
+    background-color: #e07604;
+    color: #ffffff;
+    font-size: 18px; /* Larger font size for the button */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.login-form button:hover {
+    background-color: #d06500;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+    display: block;
+    margin-top: 1.5rem; /* Spacing below the form fields */
+    color: #007bff;
+    font-size: 14px;
+    font-family: 'Aharoni', sans-serif; /* Explicitly set Aharoni for the form */
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Create Account Button */
+.create-account-button {
+    display: inline-block;
+    margin-top: 1.5rem; /* Additional spacing to position it lower */
+    padding: 0.8rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Aharoni', sans-serif; /* Explicitly set Aharoni for the form */
+
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Aharoni', sans-serif; /* Explicitly set Aharoni for back button */
+}
+
+.back-button:hover {
+    color: #555;
+}

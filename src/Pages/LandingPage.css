@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: -1;
+    right: 0;
+}
+
+.navbar-logo h1 {
+    margin: 0;
+}
+
+.navbar-links-left {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-links-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This
+     pushes the right-aligned buttons to the far right */
+}
+
+.get-started-btn, .login-btn, .register-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px; /* Increased padding for better button size */
+    border-radius: 40px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the space between buttons */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    
+}
+.login-btn, .register-btn {
+    margin-left: 20px;
+
+.get-started-btn:hover, .login-btn:hover, .register-btn:hover {
+    background-color: #555;
+    color: #fff;
+}
+}
