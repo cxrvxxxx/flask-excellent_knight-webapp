@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excellent Knight</title>
+  <!-- CSS Includes -->
+   <link rel="stylesheet" href="./css/fonts.css">
+   <link rel="stylesheet" href="./css/containers.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="container-fluid">
+    <!-- Page Header -->
+    <span class="title">Excellent Knight</span>
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-group">
+        <li><a class="nav-link" href="">Home</a></li>
+        <li><a class="nav-link" href="">About</a></li>
+      </ul>
+      <ul class="nav-group">
+        <li><a id="profile" class="nav-link" href="">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Landing -->
+    <section id="landing">
+      <div class="cta-container">
+        <h1 class="cta-title">Get the Latest Updates Right at Your Fingertips!</h1>
+        <button id="actionButton" class="cta-btn">JOIN NOW!</button>
+      </div>
+    </section>
+    <!-- Login/Signup Selection -->
+    <section id="action" class="hidden animate">
+      <form id="actionForm" class="form-container">
+        <div class="form-header">
+          <img id="actionBackButton" class="action-icon" src="./images/back-icon.svg" alt="Go Back">
+          <span class="form-title">Login or Register</span>
+        </div>
+        <button id="loginButton" class="form-submit" type="submit">Login</button>
+        <span class="form-divider">or</span>
+        <button id="registerButton" class="form-submit" type="submit">Register</button>
+      </form>
+    </section>
+    <!-- Login -->
+    <section id="login" class="hidden animate">
+      <form id="loginForm" class="form-container" action="">
+        <div class="form-header">
+          <img id="loginBackButton" class="action-icon" src="./images/back-icon.svg" alt="Go Back">
+          <span class="form-title">Login</span>
+        </div>
+        <label class="form-label" for="inputLoginEmail">Email</label>
+        <input class="form-input" name="email" id="inputLoginEmail" type="text">
+        <label class="form-label" for="inputLoginPassword">Password</label>
+        <input class="form-input" name="password" id="inputLoginPassword" type="password">
+        <button class="form-submit" type="submit">Login</button>
+      </form>
+    </section>
+    <!-- Signup -->
+    <section id="signup" class="hidden animate">
+      <form id="signupForm" class="form-container">
+        <div class="form-header">
+          <img id="signupBackButton" class="action-icon" src="./images/back-icon.svg" alt="Go Back">
+          <span class="form-title">Create an Account</span>
+        </div>
+        <label class="form-label" for="inputSignupEmail">Email</label>
+        <input class="form-input" name="email" id="inputSignupEmail" type="text">
+        <label class="form-label" for="inputSignupPassword">Password</label>
+        <input class="form-input" name="password" id="inputSignupPassword" type="password">
+        <label class="form-label" for="inputSignupConfirmPassword">Confirm Password</label>
+        <input class="form-input" id="inputSignupConfirmPassword" type="password">
+        <label class="form-label" for="inputSignupFirstname">Firstname</label>
+        <input class="form-input" name="firstname" id="inputSignupFirstname" type="text">
+        <label class="form-label" for="inputSignupLastname">Lastname</label>
+        <input class="form-input" name="lastname" id="inputSignupLastname" type="text">
+        <label class="form-label" for="inputSignupControlNumber">Control Number</label>
+        <input class="form-input" name="control_number" id="inputSignupControlNumber" type="text">
+        <label class="form-label" for="inputSignupMCModel">Motorcycle Model</label>
+        <input class="form-input" name="motorcycle_model" id="inputSignupMCModel" type="text">
+        <label class="form-label" for="inputSignupPlateNumber">Plate Number</label>
+        <input class="form-input" name="plate_number" id="inputSignupPlateNumber" type="text">
+        <button class="form-submit" type="submit">Register</button>
+      </form>
+    </section>
+
+    <!-- Post List -->
+    <section id="feed" class="hidden animate">
+      <h2 class="section-heading">posts</h2>
+      <input id="postSearch" class="search-bar sticky" type="text" placeholder="Search title or author...">
+      <ul id="posts" class="post-container"></ul>
+    </section>
+
+    <!-- View Post -->
+    <section id="post" class="hidden animate">
+      <div class="form-header">
+        <img id="postBackButton" class="action-icon" src="./images/back-icon.svg" alt="Go Back">
+        <h2 class="section-heading">Viewing Post</h2>
+      </div>
+      <span class="post-date"></span>
+      <div class="post-data">
+        <div class="avatar">
+          <img class="profpic" src="./images/profile.svg" alt="User avatar image">
+          <span class="post-author"></span>
+          <span class="post-author-mc"></span>
+        </div>
+        <div class="post-main">
+          <span class="post-title"></span>
+          <hr>
+          <span class="post-content"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>
