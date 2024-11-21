@@ -1,0 +1,330 @@
+[
+    {
+        "id": 1,
+        "date_created": "11-19-2024 13:45",
+        "date_modified": "11-19-2024 13:45",
+        "email": "user1@example.com",
+        "firstname": "First1",
+        "lastname": "Last1",
+        "control_number": "CN1",
+        "motorcycle_model": "Model1",
+        "password": "123",
+        "plate_number": "PLT-1",
+        "posts": [
+            {
+                "id": 1,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 1 by User 1",
+                "body": "This is the body of post 1 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 2,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 2 by User 1",
+                "body": "This is the body of post 2 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 3,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 3 by User 1",
+                "body": "This is the body of post 3 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 4,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 4 by User 1",
+                "body": "This is the body of post 4 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 5,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 5 by User 1",
+                "body": "This is the body of post 5 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 6,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 6 by User 1",
+                "body": "This is the body of post 6 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 7,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 7 by User 1",
+                "body": "This is the body of post 7 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 8,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 8 by User 1",
+                "body": "This is the body of post 8 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 9,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 9 by User 1",
+                "body": "This is the body of post 9 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 10,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 10 by User 1",
+                "body": "This is the body of post 10 by user 1.",
+                "author_id": 1,
+                "author": {
+                    "id": 1,
+                    "firstname": "First1",
+                    "lastname": "Last1",
+                    "email": "user1@example.com"
+                },
+                "replies": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "date_created": "11-19-2024 13:45",
+        "date_modified": "11-19-2024 13:45",
+        "email": "user2@example.com",
+        "firstname": "First2",
+        "lastname": "Last2",
+        "control_number": "CN2",
+        "motorcycle_model": "Model2",
+        "password": "123",
+        "plate_number": "PLT-2",
+        "posts": [
+            {
+                "id": 11,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 1 by User 2",
+                "body": "This is the body of post 1 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 12,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 2 by User 2",
+                "body": "This is the body of post 2 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 13,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 3 by User 2",
+                "body": "This is the body of post 3 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 14,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 4 by User 2",
+                "body": "This is the body of post 4 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 15,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 5 by User 2",
+                "body": "This is the body of post 5 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 16,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 6 by User 2",
+                "body": "This is the body of post 6 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 17,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 7 by User 2",
+                "body": "This is the body of post 7 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 18,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 8 by User 2",
+                "body": "This is the body of post 8 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 19,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 9 by User 2",
+                "body": "This is the body of post 9 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            },
+            {
+                "id": 20,
+                "date_created": "11-19-2024 13:45",
+                "date_modified": "11-19-2024 13:45",
+                "title": "Post 10 by User 2",
+                "body": "This is the body of post 10 by user 2.",
+                "author_id": 2,
+                "author": {
+                    "id": 2,
+                    "firstname": "First2",
+                    "lastname": "Last2",
+                    "email": "user2@example.com"
+                },
+                "replies": []
+            }
+        ]
+    }
+]

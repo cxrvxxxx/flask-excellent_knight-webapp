@@ -1,0 +1,416 @@
+:root {
+    --knight-black: #1B1B1B; /* Armor/Stealth */
+    --knight-white: #F5F5F5; /* Purity/Chivalry */
+    --knight-red: #8B0000; /* Courage/Blood */
+    --knight-yellow: #FFD700; /* Honor/Gold */
+    --knight-orange: #FF8C00; /* Energy/Fire */
+    --knight-blue: #274472; /* Loyalty/Strength */
+    --input-background: #E0E0E0;
+    --knight-white-translucent: rgba(245, 245, 245, 0.65);
+    --knight-black-translucent: rgb(27, 27, 27, 0.15);
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base style */
+html, body {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: var(--knight-black);
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    background-color: var(--knight-black);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.title {
+    color: var(--knight-orange);
+    display: block;
+    font-family: "Old London", serif;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0.5rem 1rem;
+}
+/* Navbar */
+nav {
+    background-color: var(--knight-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-group li {
+    display: inline-block;
+}
+
+.nav-link {
+    display: block;
+    color: var(--knight-black);
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    background-color: var(--knight-black-translucent);
+}
+
+/* Content */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+/* Section */
+section {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 7rem;
+    transition: opacity 0.1s ease-in-out;
+    width: 100%;
+}
+
+section:not(#feed, #signup, #landing, #post) {
+    max-width: min(350px, 100%);
+}
+
+section.animate {
+    opacity: 0%;
+}
+
+.cta-title {
+    color: var(--knight-white);
+    font-family: "Cinzel", serif;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 1px #808080;
+}
+
+.hidden {
+    display: none !important;
+}
+/* Form Styles */
+.form-container {
+    background-color: var(--knight-white-translucent);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--knight-white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    width: 100%;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.action-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 1rem;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.action-icon:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.form-title {
+    display: inline;
+    font-family: "Cinzel";
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form-label, .form-input {
+    display: block;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: 0.65rem;
+}
+
+.form-input {
+    border: none;
+    background-color: var(--input-background);
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.form-submit {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--knight-white);
+    background-color: var(--knight-orange);
+    border: none;
+    border-radius: 3px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+}
+
+.cta-btn {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: var(--knight-white);
+    flex: 1;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 1rem;
+}
+
+.form-divider {
+    color: var(--knight-black);
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Slightly reduce the size */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Per-Seection Styles */
+#signup {
+    max-height: 100%;
+    overflow: scroll;
+    max-width: min(700px, 100%);
+    scrollbar-width: none;
+}
+
+#signup::-webkit-scrollbar {
+    display: none;
+}
+
+#feed {
+    backdrop-filter: blur(10px);
+    background-color: var(--knight-white-translucent);
+    border: 1px solid var(--knight-white);
+    border-radius: 5px;
+    max-height: 100%;
+    max-width: min(700px, 100%);
+    overflow-y: scroll;
+    padding-top: 6rem;
+    padding: 1rem;
+    scrollbar-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+#feed::-webkit-scrollbar {
+    display: none;
+}
+
+.post-container {
+    width: 100%;
+    list-style-type: none;
+}
+
+.post-item {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.post-item:hover {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) inset,
+    -2px -2px 3px white inset;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.post-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-heading span {
+    margin-bottom: 0.5rem;
+}
+
+.post-title {
+    display: block;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+}
+
+.post-author, .post-date {
+    display: block;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.post-data {
+    padding: 0 1rem;
+    display: flex;
+    width: 100%;
+}
+
+#post .post-date {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.post-content {
+    width: 100%;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 0.8rem;
+}
+
+.post-main {
+    padding: 0 0.75rem;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profpic {
+    backdrop-filter: blur(5px);
+    background-color: var(--knight-black-translucent);
+    border: 2px solid var(--knight-black);
+    border-radius: 8px;
+    padding: 1rem;
+    height: 80px;
+    width: auto;
+}
+
+.post-data .post-author {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.section-heading {
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    display: inline;
+}
+
+#post {
+    background-color: var(--knight-white-translucent);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--knight-white);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    max-width: min(700px, 100%);
+}
+
+.post-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--knight-black);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.search-bar {
+    border: none;
+    background-color: var(--input-background);
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: 0.65rem;
+    display: inline-block;
+    width: 100%;
+    margin: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+@media (min-width: 572px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    .cta-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html, body {
+        font-size: 20px;
+    }
+}
